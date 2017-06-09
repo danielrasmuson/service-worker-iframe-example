@@ -1,0 +1,13 @@
+{
+  "name": "service-worker-iframe-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Rasmuson <dan123911@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "scripts": {
+    "start": "http-server src -p 8080 & http-server src/iframe -p 3000 & open http://localhost:8080/index.html"
+  }
+}
